@@ -70,27 +70,34 @@ body {
       flex: 1;
       padding: 15px;
       border-radius: 8px;
-      color: white;
+      color: rgb(255, 255, 255);
       font-weight: bold;
       text-align: center;
       position: relative;
+      font-family: "Hind Siliguri", sans-serif;
       cursor: pointer;
+    }
+    .main-list > li a{
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      font-weight: 800;
+      font-family: "Hind Siliguri", sans-serif;
     }
 
     .item1 {
-      background: linear-gradient(45deg, #ff7e5f, #feb47b);
+      background: linear-gradient(45deg, #0f2379, #0f2379);
     }
 
     .item2 {
-      background: linear-gradient(45deg, #6a11cb, #2575fc);
+      background: linear-gradient(45deg, #0f2379, #0f2379);
     }
 
     .item3 {
-      background: linear-gradient(45deg, #43cea2, #185a9d);
+      background: linear-gradient(45deg,#0f2379, #0f2379);
     }
 
     .item4 {
-      background: linear-gradient(45deg, #f7971e, #ffd200);
+      background: linear-gradient(45deg, #0f2379, #0f2379);
     }
 
     .dropdown {
@@ -108,27 +115,28 @@ body {
 
     .dropdown li {
       padding: 8px 0;
+      margin-bottom: 5px;
       color: white;
       font-weight: normal;
     }
 
     .dropdown li:nth-child(1) {
-      background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+      background: linear-gradient(45deg, #0f2379, #0f2379);
     }
     .dropdown li:nth-child(2) {
-      background: linear-gradient(45deg, #a18cd1, #fbc2eb);
+      background: linear-gradient(45deg, #0f2379, #0f2379);
     }
     .dropdown li:nth-child(3) {
-      background: linear-gradient(45deg, #f6d365, #fda085);
+      background: linear-gradient(45deg, #0f2379, #0f2379);
     }
     .dropdown li:nth-child(4) {
-      background: linear-gradient(45deg, #84fab0, #8fd3f4);
+      background: linear-gradient(45deg, #0f2379, #0f2379);
     }
     .dropdown li:nth-child(5) {
-      background: linear-gradient(45deg, #cfd9df, #e2ebf0);
+      background: linear-gradient(45deg, #0f2379, #0f2379);
     }
     .dropdown li:nth-child(6) {
-      background: linear-gradient(45deg, #ffecd2, #fcb69f);
+      background: linear-gradient(45deg, #0f2379, #0f2379);
     }
 
     .item4:hover .dropdown {
