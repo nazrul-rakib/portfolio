@@ -1,0 +1,136 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #fff;
+}
+/*====================================font add ===========================*/
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Fjalla+One&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+
+/*====================================font ses ===========================*/
+.header-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+.header-nav img {
+  width: 40px;
+  height: 50px;
+  margin-left: 8px;
+}
+
+.header-nav p {
+  font-size: 22px;
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 700;
+}
+.header-nav button {
+  margin-right: 8px;
+  background: #5e5df0;
+  width: 120px;
+  border-radius: 999px;
+  box-shadow: #5e5df0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji",
+    NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
+    EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 5px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+/*=============================lister ==================================*/
+.gradient-container {
+      padding: 20px;
+    }
+
+    ul.main-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 10px;
+    }
+
+    .main-list > li {
+      flex: 1;
+      padding: 15px;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .item1 {
+      background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    }
+
+    .item2 {
+      background: linear-gradient(45deg, #6a11cb, #2575fc);
+    }
+
+    .item3 {
+      background: linear-gradient(45deg, #43cea2, #185a9d);
+    }
+
+    .item4 {
+      background: linear-gradient(45deg, #f7971e, #ffd200);
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      list-style: none;
+      padding: 10px 0;
+      margin: 0;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .dropdown li {
+      padding: 8px 0;
+      color: white;
+      font-weight: normal;
+    }
+
+    .dropdown li:nth-child(1) {
+      background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    }
+    .dropdown li:nth-child(2) {
+      background: linear-gradient(45deg, #a18cd1, #fbc2eb);
+    }
+    .dropdown li:nth-child(3) {
+      background: linear-gradient(45deg, #f6d365, #fda085);
+    }
+    .dropdown li:nth-child(4) {
+      background: linear-gradient(45deg, #84fab0, #8fd3f4);
+    }
+    .dropdown li:nth-child(5) {
+      background: linear-gradient(45deg, #cfd9df, #e2ebf0);
+    }
+    .dropdown li:nth-child(6) {
+      background: linear-gradient(45deg, #ffecd2, #fcb69f);
+    }
+
+    .item4:hover .dropdown {
+      display: block;
+    }
