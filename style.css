@@ -45,12 +45,12 @@ body {
     NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
     EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
     "Noto Sans", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 24px;
   opacity: 1;
   outline: 0 solid transparent;
-  padding: 5px 18px;
+  padding: 5px 10px;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -65,7 +65,6 @@ body {
       padding-right: 20px;
       padding-top: 2px;
     }
-
     ul.main-list {
       list-style: none;
       padding: 0;
@@ -73,7 +72,6 @@ body {
       display: flex;
       gap: 10px;
     }
-
     .main-list > li {
       flex: 1;
       padding-left: 15px;
@@ -159,7 +157,7 @@ body {
    #three .main-images{
     background-image:linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.3)), url(image/photo-one.png) ;
     width:100%;
-    height: 200px;
+    height: fit-content;
     background-position: center;
     background-repeat: no-repeat;
     color: #fff;
@@ -184,14 +182,9 @@ body {
   text-align: center;
 }
 #three .main-images p{
-   margin: 0px;
-  padding: 5px 0px 0px 0px;
+ padding-bottom: 50px;
   font-size: 16px;
   text-align: center;
 }
-.sec-four{
-  width: 100%;.
-  height: 30px;
-  background:#0f2379 ;
-  color: #fff;
-}
+/*================================================================= sec four 444444444444444444444444444444444444444444444444*/
+
