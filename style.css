@@ -1,6 +1,7 @@
 body {
   margin: 0px;
   padding: 0px;
+  font-family: "Hind Siliguri", sans-serif;
   background-color: #fff;
 }
 /*====================================font add ===========================*/
@@ -29,10 +30,10 @@ body {
 }
 .header-nav button {
   margin-right: 8px;
-  background: #5e5df0;
+  background: #0f2379;
   width: 120px;
   border-radius: 999px;
-  box-shadow: #5e5df0 0 10px 20px -10px;
+  box-shadow: #0f2379 0 10px 20px -10px;
   box-sizing: border-box;
   color: #ffffff;
   cursor: pointer;
@@ -150,8 +151,43 @@ body {
     .item4:hover .dropdown {
       display: block;
     }
-    /*====================================================================================Section B===============================*/
-    #main-images img{
-      width: 100%;
-      height: 200px;
-    }
+    /*====================================================================================Section three ===============================*/
+   #three .main-images{
+    background-image:linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.3)), url(image/photo-one.png) ;
+    width:100vh;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+   }
+   #three .main-images h3{
+    padding:50px 0px 0px 0px;
+    text-align: center;
+    margin: 0px;
+    font-weight: 800;
+    font-size: 24px;
+   }
+#three .main-images h4{
+  margin: 0px;
+  padding: 0px;
+  font-size: 18px;
+  text-align: center;
+}
+#three .main-images h5{
+  margin: 0px;
+  font-size: 18px;
+  padding: 0px;
+  text-align: center;
+}
+#three .main-images p{
+   margin: 0px;
+  padding: 5px 0px 0px 0px;
+  font-size: 16px;
+  text-align: center;
+}
+#sec-four{
+  width: 100vh;.
+  height: 30px;
+  background-color:#0f2379 ;
+  color: #fff;
+}
