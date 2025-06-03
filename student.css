@@ -53,6 +53,13 @@ body{
   }
 }
 
+header .button-64 a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding: 10px;
+}
+
 
 /*================================================================================================================*/
 .maintext{
@@ -64,3 +71,20 @@ body{
 .maintext h2{
     margin: 0px;
 }
+/*================================================================================================================*/
+.table-content {
+      width: 80%;
+      margin: auto; /* Center the table itself on the page */
+      border-collapse: collapse; /* Merge table borders */
+      text-align: center; /* Center text horizontally */
+    }
+
+    th, td {
+      border: 1px solid black; /* Add border to cells */
+      padding: 10px;
+      vertical-align: middle; /* Center text vertically */
+    }
+
+    th {
+      background-color: #a9ebe5;
+    }
