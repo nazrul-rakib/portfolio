@@ -190,10 +190,14 @@ body {
 /*================================================================= sec four 444444444444444444444444444444444444444444444444*/
 
 .mark-text{
-  margin-top: 0;
+  display: flex;
   background-color: #0f2379;
   color: #fff;
-}
+  justify-content: center; /* horizontally center */
+  align-items: center;      /* vertically center */
+  height: 22px; }
+  
+
 .m-text{
   padding: 8px;
 }
