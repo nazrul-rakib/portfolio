@@ -159,6 +159,7 @@ body {
     width:100%;
     height: fit-content;
     background-position: center;
+    b
     background-repeat: no-repeat;
     color: #fff;
    }
@@ -188,3 +189,47 @@ body {
 }
 /*================================================================= sec four 444444444444444444444444444444444444444444444444*/
 
+.mark-text{
+  margin-top: 0;
+  background-color: #0f2379;
+  color: #fff;
+}
+.m-text{
+  padding: 8px;
+}
+
+.vpsir {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.vpsir .image {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  height: 100%;
+}
+
+.vpsir .image img {
+  width: 80px;
+  object-fit: contain; 
+}
+
+.vpsir .des h3{
+  margin: 0px 0px 0px 15px;
+  font-family: "Hind Siliguri", sans-serif;
+}
+.mainvp{
+  margin: 0px 12px 0px 12px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+}
+
+.mainvp .vpdes p{
+  padding: 0px 15px;
+}
