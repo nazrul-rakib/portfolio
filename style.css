@@ -223,7 +223,7 @@ header{
   font-family: "Hind Siliguri", sans-serif;
 }
 .mainvp{
-  margin: 0px 12px 0px 12px;
+  margin: 5px 12px 0px 12px;
   display: flex;
   flex-direction: column;
   border-radius: 15px;
@@ -260,7 +260,11 @@ header{
 
 .main-box .des p,
 .main-box .des h3 {
-    margin: 0px;
+      margin: 0px;
+
+}
+.main-box .des h3{
+  color: #0F2379;
 }
 /*================================================================= rasel sir end 444444444444444444444444444444444444444444444444*/
 /*================================================================= 8 option start 444444444444444444444444444444444444444444444444*/
