@@ -1,12 +1,40 @@
-.about {
-    background-color: #f2f2f2;
-    padding: 20px;
-    border-radius: 8px;
-    font-family: Arial, sans-serif;
+body{
+    background: url(bg/one.png);
+    background-repeat: repeat-x;
+    width: 100vw;
+    font-family: "Hind Siliguri", sans-serif;
 }
-.about h1 {
-    color: #333;
-}
-.about p {
-    color: #666;
-}
+
+
+/*====================================font add ===========================*/
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Fjalla+One&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Carter+One&family=Fjalla+One&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+/*====================================font ses ===========================*/
+ .breadcrumb {
+      display: flex;
+    }
+
+    .breadcrumb a {
+      position: relative;
+      display: inline-block;
+      background: #0f50b7;
+      color: white;
+      padding: 10px 30px;
+      margin-right: 20px;
+      text-decoration: none;
+      clip-path: polygon(
+        0% 0%, 
+        85% 0%, 
+        100% 50%, 
+        85% 100%, 
+        0% 100%, 
+        10% 50%
+      );
+    }
+
+    .breadcrumb a:hover {
+      background: #093c8e;
+    }

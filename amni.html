@@ -1,24 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animated Menu with Back</title>
+  <link rel="stylesheet" href="amni.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<style>
-    
-.chart{
-     width: 500px;
-     height: 500px;
-     border-radius: 50%;
-     background: conic-gradient(
-        yellow 0% 20%,
-        blue 0% 60%,
-        red 0% 20%,
-     );
-}
-</style>
 <body>
-        <div class="chart"></div>
+
+  <header>
+    <div class="branding">
+      <div class="logo"><img src="image/Logo.jpg"></div>
+      <div class="name">
+        <p class="sclname">Nazrul Pre-Cadet School, Shibram</p>
+        <p>Established- 2008</p>
+        <p class="sthan">Sundarganj, Gaibandha.</p>
+      </div>
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <nav id="sidebar">
+    <div class="back-icon" onclick="toggleMenu()"><i class="fa-solid fa-arrow-right"></i></div>
+    <ul>
+      <li><i class="fa-solid fa-house"></i><a href="index.html">Home</a></li>
+      <li><i class="fa-solid fa-graduation-cap"></i><a href="student.html">Student</a></li>
+      <li><i class="fa-solid fa-user"></i><a href="blank.html">Abashik</a></li>
+      <li><i class="fa-solid fa-chalkboard-user"></i><a href="blank.html">Teacher</a></li>
+      <li><i class="fa-solid fa-users-gear"></i><a href="blank.html">Staf</a></li>
+      <li><i class="fas fa-newspaper"></i><a href="blank.html">Notice</a></li>
+      <li><i class="fa-solid fa-image"></i><a href="blank.html">Gallery</a></li>
+      <li><i class="fa-solid fa-phone"></i><a href="blank.html">Contact</a></li>
+      <li><i class="fa-solid fa-circle-exclamation"></i><a href="blank.html">About</a></li>
+
+      
+      
+    </ul>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("sidebar").classList.toggle("active");
+    }
+  </script>
+
 </body>
 </html>

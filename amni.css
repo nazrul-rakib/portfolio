@@ -1,0 +1,136 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      background-color: #f0f0f0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #004080;
+      color: white;
+      padding: 15px 20px;
+    }
+
+    .branding {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: white;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+   .logo img{
+      width: 28px;
+      height: 35px;
+    
+
+    }
+    .name {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .name p {
+      margin: 0;
+      font-size: 12px;
+    }
+      .name .sclname {
+      font-weight: 700;
+      font-size: 18px;
+    }
+    .name .sthan{
+        font-size: 14px;
+    }
+
+    .menu-icon {
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    nav#sidebar {
+      position: absolute;
+      top: 0;
+      right: -250px;
+      width: 250px;
+      height: Auto;
+      background-color: #002244;
+      transition: right 0.5s ease-in-out;
+      z-index: 999;
+      padding-top: 60px;
+    }
+
+    nav#sidebar.active {
+      right: 0;
+    }
+
+    .back-icon {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      font-size: 22px;
+      color: white;
+      cursor: pointer;
+    }
+
+    nav#sidebar ul {
+      list-style: none;
+      padding-top: 20px;
+    }
+
+    nav#sidebar ul li {
+      padding: 15px 20px;
+      color: white;
+      border-bottom: 1px solid #444;
+      cursor: pointer;
+      opacity: 0;
+      transform: translateX(100%);
+      animation: slideIn 0.5s forwards;
+    }
+    nav#sidebar ul li a{ 
+        text-decoration: none;
+        padding-left: 10px;
+        color: #fff;
+    }
+    nav#sidebar.active ul li {
+      animation: slideIn 0.5s ease forwards;
+    }
+    nav#sidebar.active ul li:hover{
+        background-color: #004080;
+    }
+
+    nav#sidebar.active ul li:nth-child(1) { animation-delay: 0.1s; }
+    nav#sidebar.active ul li:nth-child(2) { animation-delay: 0.2s; }
+    nav#sidebar.active ul li:nth-child(3) { animation-delay: 0.3s; }
+    nav#sidebar.active ul li:nth-child(4) { animation-delay: 0.4s; }
+    nav#sidebar.active ul li:nth-child(5) { animation-delay: 0.5s; }
+    nav#sidebar.active ul li:nth-child(6) { animation-delay: 0.6s; }
+    nav#sidebar.active ul li:nth-child(7) { animation-delay: 0.7s; }
+
+    @keyframes slideIn {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
