@@ -5,50 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Npcs shibram</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Fjalla+One&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Fjalla+One&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="amni.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
 
   <body>
+    
+  <section>
     <header>
-      <div class="header-nav">
-        <img src="image/Logo.jpg" />
-        <p>Npcss</p>
-        <button>
-          <a
-            href="https://web.facebook.com/profile.php?id=61571175182142"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Follow Us Facebook</a>
-        </button>
+    <div class="branding">
+      <div class="logo"><img src="image/Logo.jpg"></div>
+      <div class="name">
+        <p class="sclname">Nazrul Pre-Cadet School, Shibram</p>
+        <p>Established- 2008</p>
+        <p class="sthan">Sundarganj, Gaibandha.</p>
       </div>
-    </header>
-    <div class="mark-text">
-      <marquee class="m-text">কাজ চলমান</marquee>
     </div>
-    <section id="lister">
-    <div class="gradient-container">
-      <ul class="main-list">
-        <li class="item1"><a href="index.html">Home</a></li>
-        <li class="item2"><a href="amni.html">About</a></li>
-        <li class="item3"><a href="blank.html">Contact</a></li>
-        <li class="item4">
-          More ‎  <i class="fa-solid fa-caret-down fa-beat-fade"></i>
-          <ul class="dropdown">
-            <li><a href="student.html">Student</a></li>
-            <li><a href="blank.html">Teacher</a></li>
-            <li><a href="blank.html">Abashik</a></li>
-            <li><a href="blank.html">Notice</a></li>
-            <li><a href="blank.html">Gallery</a></li>
-            <li><a href="blank.html">Contact</a></li>
-            <li><a href="blank.html">About</a></li>
-            <li><a href="blank.html">About</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <nav id="sidebar">
+    <div class="back-icon" onclick="toggleMenu()"><i class="fa-solid fa-arrow-right"></i></div>
+    <ul>
+      <li><i class="fa-solid fa-house"></i><a href="index.html">Home</a></li>
+      <li><i class="fa-solid fa-graduation-cap"></i><a href="student.html">Student</a></li>
+      <li><i class="fa-solid fa-user"></i><a href="blank.html">Abashik</a></li>
+      <li><i class="fa-solid fa-chalkboard-user"></i><a href="blank.html">Teacher</a></li>
+      <li><i class="fa-solid fa-users-gear"></i><a href="blank.html">Staf</a></li>
+      <li><i class="fas fa-newspaper"></i><a href="blank.html">Notice</a></li>
+      <li><i class="fa-solid fa-image"></i><a href="blank.html">Gallery</a></li>
+      <li><i class="fa-solid fa-phone"></i><a href="blank.html">Contact</a></li>
+      <li><i class="fa-solid fa-circle-exclamation"></i><a href="blank.html">About</a></li>
+
+      
+      
+    </ul>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("sidebar").classList.toggle("active");
+    }
+  </script>
+  </section>
+  <section>                                         <!-- এটা একটি marquee কমেন্ট -->
+<div class="marqu">
+  <p>নোটিশ-</p>
+  <marquee> কাজ চলমান।  সাময়ীক অসুবিধার জন্য দুঃখিত...! </marquee>
+</div>
+
   </section>
     <section id="three">
   <div class="main-images">
@@ -147,6 +155,24 @@
     <p class="boishisto">স্কুলের বৈশিষ্ট্য:</p>
     <p>একবিংশ শতাব্দীর, দ্রুত পরিবর্তনশীল দুনিয়ায় বিশেষ করে বর্তমান বিশ্বায়নের প্রতিযোগিতা মোকাবিলায় সুন্দরভাবে প্রাথমিক কাঠামো তৈরিতে প্রয়োজন যুগোপযোগী প্রযুক্তি সমৃদ্ধ শিক্ষা ব্যবস্থা যার সম্পূর্ণটিই রাখার চেষ্টা করা হয়েছে এই প্রতিষ্ঠানে।</p>
   </div>
+</section>
+<section>                            <!--================================================== এটা একটি visitor কমেন্ট -->
+  <!-- ✅ Visitor Counter Block -->
+<div id="visitor-box">
+  🔁 Total Views: <span id="visitor-count">Loading...</span>
+</div>
+
+<script>
+  fetch('https://api.countapi.xyz/hit/npcl-school/view')
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById("visitor-count").innerText = data.value;
+    })
+    .catch(err => {
+      document.getElementById("visitor-count").innerText = "Error";
+      console.error("Visitor count load failed:", err);
+    });
+</script>
 </section>
   </body>
 </html>
