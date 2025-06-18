@@ -233,6 +233,7 @@ header{
 
 .mainvp .vpdes p{
   padding: 0px 15px;
+  text-align: justify;
 }
 /*================================================================= rasel sir start 444444444444444444444444444444444444444444444444*/
 .main-box {
@@ -324,7 +325,7 @@ color: #0f2379;
 /*================================================================= 8 option end 444444444444444444444444444444444444444444444444*/
 /*===========================================================obosthan start=======================================================*/
 .obosthan{
-  border: 1px solid black;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   margin: 10px 12px;
 }
 
@@ -336,6 +337,15 @@ color: #0f2379;
   border-bottom: 1px solid rgb(196, 196, 196);
 }
 .obosthan p{
+  padding: 8px;
+  text-align: justify;
+}
+
+.boishisto{
+  background-color: rgb(237, 116, 241);
+  color: #070707;
   padding: 5px;
+  font-weight: 700;
+  border-bottom: 1px solid rgb(196, 196, 196);
 }
 /*===========================================================obosthan end=======================================================*/
