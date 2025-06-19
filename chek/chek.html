@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Arrow Navigation</title>
+  <link rel="stylesheet" href="chek.css">
+</head>
+<body>
+<div class="container">
+  <div class="box small">Left</div>
+  <div class="box large">Center</div>
+  <div class="box small">Right</div>
+</div>
+<script>
+  const boxes = document.querySelectorAll(".box");
+
+  window.addEventListener("scroll", () => {
+    const midY = window.innerHeight / 2;
+
+    boxes.forEach((box) => {
+      const boxRect = box.getBoundingClientRect();
+      const boxCenter = boxRect.top + boxRect.height / 2;
+
+      const distance = Math.abs(midY - boxCenter);
+
+      if (distance < 100) {
+        box.classList.add("large");
+        box.classList.remove("small");
+      } else {
+        box.classList.add("small");
+        box.classList.remove("large");
+      }
+    });
+  });
+</script>
+</body>
+</html>

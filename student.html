@@ -3,157 +3,221 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Studesnt npcs</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Fjalla+One&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="student.css">
-    
-    
+    <title>Studesnt of Nazrul Pre-cadet School Shibram</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/png" href="image/Logo.jpg">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carter+One&family=Fjalla+One&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="student.css" />
+    <link rel="stylesheet" href="amni.css" />
   </head>
   <body>
-    <header>
-        <div class="icon">
-           <button class="button-64" role="button"><a href="index.html">Back</a></button>
+    <section>
+      <header>
+        <div class="branding">
+          <div class="logo"><img src="image/Logo.jpg" /></div>
+          <div class="name">
+            <p class="sclname">Nazrul Pre-Cadet School, Shibram</p>
+            <p>Established- 2008</p>
+            <p class="sthan">Sundarganj, Gaibandha.</p>
+          </div>
         </div>
-    </header>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      </header>
+
+      <nav id="sidebar">
+        <div class="back-icon" onclick="toggleMenu()">
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+        <ul>
+          <li>
+            <i class="fa-solid fa-house"></i><a href="index.html">Home</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-graduation-cap"></i
+            ><a href="student.html">Student</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-user"></i><a href="blank.html">Abashik</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-chalkboard-user"></i
+            ><a href="blank.html">Teacher</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-users-gear"></i><a href="blank.html">Staf</a>
+          </li>
+          <li>
+            <i class="fas fa-newspaper"></i><a href="blank.html">Notice</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-image"></i><a href="blank.html">Gallery</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i><a href="blank.html">Contact</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-exclamation"></i
+            ><a href="blank.html">About</a>
+          </li>
+        </ul>
+      </nav>
+      <script>
+        function toggleMenu() {
+          document.getElementById("sidebar").classList.toggle("active");
+        }
+      </script>
+
+      <!----------------------------------------------------------------------------------------- 2 Button Home start -->
+      <div class="breadcrumb">
+        <div class="step home"><a href="index.html">Home</a></div>
+        <div class="step student"><a href="student.html">Student</a></div>
+      </div>
+      <!----------------------------------------------------------------------------------------- 2 Button Home end -->
+    </section>
     <div class="maintext">
-         <h2 class="schoolname">নজরুল প্রি-ক্যাডেট স্কুল, শিবরাম</h2>
-         <h3>শিবরাম, সুন্দরগঞ্জ, গাইবান্ধা</h3>
-         <h3>শিক্ষাবর্ষ : 2025  খ্রিঃ</h3>
-         <h3>মোট শিক্ষার্থী সংখ্যা:- </h3>
+      <h2 class="schoolname">নজরুল প্রি-ক্যাডেট স্কুল, শিবরাম</h2>
+      <p>শিবরাম, সুন্দরগঞ্জ, গাইবান্ধা</p>
+      <p>শিক্ষাবর্ষ : 2025 খ্রিঃ</p>
+      <p>মোট শিক্ষার্থী সংখ্যা:-</p>
     </div>
     <table class="table-content">
-        <tr>
-            <th>শ্রেণি</th>
-            <th>মোট শিক্ষার্থী</th>
-            <th>ছাত্র</th>
-            <th>ছাত্রী</th>
-            <th>মুসলিম</th>
-            <th>হিন্দু</th>
-            <th>খ্রিষ্টান</th>
-        </tr>
-        <tr>
-            <td>প্লে</td>
-            <td>25</td>
-            <td>15</td>
-            <td>10</td>
-            <td>21</td>
-            <td>04</td>
-            <td>0</td>
-        </tr>
-         <tr>
-            <td>নার্সারি</td>
-            <td>30</td>
-            <td>18</td>
-            <td>12</td>
-            <td>14</td>
-            <td>06</td>
-            <td>0</td>
-        </tr>
-         <tr>
-            <td>প্রথম</td>
-            <td>25</td>
-            <td>15</td>
-            <td>10</td>
-            <td>21</td>
-            <td>04</td>
-            <td>0</td>
-        </tr>
-         <tr>
-            <td>দ্বিতীয়</td>
-            <td>25</td>
-            <td>15</td>
-            <td>10</td>
-            <td>21</td>
-            <td>04</td>
-            <td>0</td>
-        </tr>
-         <tr>
-            <td>তৃতীয়</td>
-            <td>25</td>
-            <td>15</td>
-            <td>10</td>
-            <td>21</td>
-            <td>04</td>
-            <td>0</td>
-        </tr>
-         <tr>
-            <td>চতুর্থ</td>
-            <td>25</td>
-            <td>15</td>
-            <td>10</td>
-            <td>21</td>
-            <td>04</td>
-            <td>0</td>
-        </tr>
-         <tr>
-            <td>পঞ্চম</td>
-            <td>25</td>
-            <td>15</td>
-            <td>10</td>
-            <td>21</td>
-            <td>04</td>
-            <td>0</td>
-        </tr>
-         <tr>
-            <td>ষষ্ঠ</td>
-            <td>25</td>
-            <td>15</td>
-            <td>10</td>
-            <td>21</td>
-            <td>04</td>
-            <td>01</td>
-        </tr>
-         <tr>
-            <td>সপ্তম</td>
-            <td>25</td>
-            <td>15</td>
-            <td>10</td>
-            <td>21</td>
-            <td>04</td>
-            <td>0</td>
-        </tr>
-         <tr>
-            <td>অষ্টম</td>
-            <td>25</td>
-            <td>15</td>
-            <td>10</td>
-            <td>21</td>
-            <td>04</td>
-            <td>0</td>
-        </tr>
-         <tr>
-            <td>নবম</td>
-            <td>25</td>
-            <td>15</td>
-            <td>10</td>
-            <td>21</td>
-            <td>04</td>
-            <td>0</td>
-        </tr>
-         <tr>
-            <td>দশম</td>
-            <td>25</td>
-            <td>15</td>
-            <td>10</td>
-            <td>21</td>
-            <td>04</td>
-            <td>0</td>
-        </tr>
-          <tr>
-            <td>মোট</td>
-            <td>350</td>
-            <td>150</td>
-            <td>100</td>
-            <td>210</td>
-            <td>60</td>
-            <td>01</td>
-        </tr>
-    
-       
-        
+      <tr>
+        <th>শ্রেণি</th>
+        <th>মোট শিক্ষার্থী</th>
+        <th>ছাত্র</th>
+        <th>ছাত্রী</th>
+        <th>মুসলিম</th>
+        <th>হিন্দু</th>
+        <th>খ্রিষ্টান</th>
+      </tr>
+      <tr>
+        <td>প্লে</td>
+        <td>25</td>
+        <td>15</td>
+        <td>10</td>
+        <td>20</td>
+        <td>05</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>নার্সারি</td>
+        <td>23</td>
+        <td>14</td>
+        <td>09</td>
+        <td>19</td>
+        <td>04</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>প্রথম</td>
+        <td>32</td>
+        <td>17</td>
+        <td>15</td>
+        <td>28</td>
+        <td>04</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>দ্বিতীয়</td>
+        <td>25</td>
+        <td>20</td>
+        <td>08</td>
+        <td>25</td>
+        <td>03</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>তৃতীয়</td>
+        <td>33</td>
+        <td>23</td>
+        <td>10</td>
+        <td>30</td>
+        <td>03</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>চতুর্থ</td>
+        <td>30</td>
+        <td>17</td>
+        <td>13</td>
+        <td>23</td>
+        <td>07</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>পঞ্চম</td>
+        <td>33</td>
+        <td>20</td>
+        <td>13</td>
+        <td>29</td>
+        <td>09</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>ষষ্ঠ</td>
+        <td>24</td>
+        <td>16</td>
+        <td>08</td>
+        <td>18</td>
+        <td>05</td>
+        <td>01</td>
+      </tr>
+      <tr>
+        <td>সপ্তম</td>
+        <td>26</td>
+        <td>15</td>
+        <td>11</td>
+        <td>21</td>
+        <td>06</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>অষ্টম</td>
+        <td>21</td>
+        <td>14</td>
+        <td>07</td>
+        <td>18</td>
+        <td>03</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>নবম</td>
+        <td>21</td>
+        <td>15</td>
+        <td>06</td>
+        <td>17</td>
+        <td>04</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>দশম</td>
+        <td>20</td>
+        <td>0</td>
+        <td>20</td>
+        <td>18</td>
+        <td>02</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>মোট</td>
+        <td>316</td>
+        <td>186</td>
+        <td>130</td>
+        <td>261</td>
+        <td>55</td>
+        <td>01</td>
+      </tr>
     </table>
-
   </body>
 </html>
