@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nazrul Pre‑cadet School | Footer (Always Left)</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+      }
+
+      /* ---------- Footer styles ---------- */
+      .school-footer {
+        background: #0f2379;
+        color: #fff;
+        padding: 20px;
+      }
+
+      .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 10px;
+        text-align: left; /*  👈 সব সময়ে বাম  */
+      }
+      .footer-container div {
+        flex: 1;
+        min-width: 220px;
+      }
+
+      .footer-about h3 {
+        margin: 0 0 10px;
+        font-size: 22px;
+      }
+      .footer-links h4,
+      .footer-contact h4 {
+        font-size: 25px;
+        margin: 0 0 10px;
+      }
+
+      .footer-links ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .footer-links li {
+        margin: 5px 0;
+      }
+      .footer-links a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .footer-links a:hover {
+        text-decoration: underline;
+      }
+
+      .footer-contact p {
+        margin: 2px 0;
+        padding-bottom: 5px;
+      }
+
+      .footer-bottom {
+        text-align: center;
+        border-top: 1px solid #ffffff44;
+        padding-top: 10px;
+        font-size: 14px;
+      }
+
+      /* Mobile — কেবল কলাম লেআউট, টেক্সট‑অ্যালাইন বদলায় না */
+      @media (max-width: 768px) {
+        .footer-container {
+          flex-direction: column;
+        }
+        .footer-container div {
+          min-width: 100%;
+        }
+      }
+      .footer-contact i {
+        padding-right: 10px;
+      }
+
+      /* ====================================================================icon div start */
+      .icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.icon-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  color: #0069f3;
+  padding-left: 6px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.icon-container a:hover {
+  background: #dbff10;
+}
+
+.icon-container a i {
+  font-size: 22px;
+  vertical-align: middle;
+}
+      /* ====================================================================icon div end */
+    </style>
+  </head>
+  <body>
+    <!-- * Footer * -->
+    <footer class="school-footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h3>📘 Npcss</h3>
+          <p>
+            শিক্ষাই জাতির মেরুদণ্ড। সুশিক্ষা নিশ্চিত করা হয় যুগোপযোগী পদ্ধতিতে।
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Nazrul Pre‑cadet School, Shibram</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Abashik</a></li>
+            <li><a href="student.html">Student</a></li>
+            <li><a href="#">Teacher</a></li>
+            <li><a href="#">Staff</a></li>
+            <li><a href="#">Notice</a></li>
+            <li><a href="#">Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>
+            <i class="fa-solid fa-location-dot"></i> Saitantola, Sundargonj,
+            Gaibandha.
+          </p>
+          <p><i class="fa-solid fa-phone"></i> 01712694052, 01713993500</p>
+          <p><i class="fa-solid fa-envelope"></i> npcsschool2008@gmail.com</p>
+          <div class="icon-container">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+           
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025[Npcss]. All Rights Reserved.</p>
+        <p>Developed by Md Rakibul Islam Rakib</p>
+      </div>
+    </footer>
+  </body>
+</html>

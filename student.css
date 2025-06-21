@@ -93,9 +93,8 @@ body{
       display: flex; /* flexbox layout */
       gap: 10px; /* div gulor majhe space */
        display: flex;
-       text-align: center; /* Center text horizontally */
-      justify-content: center;
       align-items: center;
+      text-align: center;
     }
 
     .box {
@@ -157,7 +156,18 @@ body{
         align-items: start;
         text-align: left;
 }
-
+.img-center{
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+.boxcenter{
+  display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
 /*-------------------------------------------1st div  start----------------------------------------------------------*/
 .bg-info {
     background-color: #334b9b!important;
