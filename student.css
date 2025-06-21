@@ -48,14 +48,26 @@ body{
     margin: 0px;
 }
 /*========================================================================Table start========================================*/
-table{
-  margin: 5px;
-}
 .table-content {
       width: 80%;
       margin: auto; /* Center the table itself on the page */
       border-collapse: collapse; /* Merge table borders */
       text-align: center; /* Center text horizontally */
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+    }
+    #ghor{
+      display: flex;
+       text-align: center; /* Center text horizontally */
+      justify-content: center;
+      align-items: center;
+    }
+    #boxcenter{
+        display: flex;
+       text-align: center; /* Center text horizontally */
+      justify-content: center;
+      align-items: center;
     }
     th{
       color: #fff;
@@ -67,9 +79,110 @@ table{
     }
 
     th {
-      background-color: #142d9e;
+      background-color: #2e48bb;
     }
     tr:nth-child(odd) {
   background-color: #bfcafd; /* হালকা নীল রঙ বিজোড় লাইনের জন্য */
 }
     /*========================================================================Table end========================================*/
+    /*========================================================================slide start========================================*/
+    .container {
+      width: 100%;
+      overflow-x: auto; /* horizontal scroll jonne */
+      white-space: nowrap; /* inline block er moto kaj korbe */
+      display: flex; /* flexbox layout */
+      gap: 10px; /* div gulor majhe space */
+       display: flex;
+       text-align: center; /* Center text horizontally */
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box {
+      margin: 10px;
+      padding: 10px;
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+      box-shadow: 1px 2px 5px 5px rgba(0,0,0,0.5);
+      display: flex;
+      flex-direction: column;
+      font-size: 1.5rem;
+      border-radius: 8px;
+    }
+    .container .box img{
+       width: 200px;
+       height: 200px;
+       margin-top: 10px;
+       align-items: center;
+       text-align: center;
+       justify-content: center;
+    }
+    .box h3{
+      margin: 0px;
+      font-size: 18px;
+      align-items: start;
+      text-align: left;
+    }
+
+    .progress {
+    display: -ms-flexbox;
+    display: flex;
+    height: 15px;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    font-size: .95rem;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+  margin: 3px;
+}
+.progress-bar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #007bff;
+    transition: width .6s ease;
+}
+.container .box p{
+        margin: 0px;
+        font-size: 15px;
+        color: rgb(0, 0, 0);
+        align-items: start;
+        text-align: left;
+}
+
+/*-------------------------------------------1st div  start----------------------------------------------------------*/
+.bg-info {
+    background-color: #334b9b!important;
+}
+.bg-info-two{
+        background-color: rgb(97, 34, 18);
+}
+/*-------------------------------------------1st div  end----------------------------------------------------------*/
+/*-------------------------------------------2nd div  start----------------------------------------------------------*/
+.bg-informa {
+    background-color: #fc9c43!important;
+}
+.bg-informa-two{
+        background-color: rgb(78, 207, 46);
+}
+/*-------------------------------------------2nd div  endt----------------------------------------------------------*/
+/*-------------------------------------------3rd div  start----------------------------------------------------------*/
+.bg-information {
+    background-color: #16113f!important;
+}
+.bg-information-two{
+        background-color: rgb(153, 62, 9);
+}
+/*-------------------------------------------3rd div  end----------------------------------------------------------*/
+
+
+
+    /*========================================================================slide end========================================*/
